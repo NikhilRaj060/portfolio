@@ -1,6 +1,5 @@
 "use client";
 import { userInfo, headerItems } from "@/app/constant/constant";
-import { NavItems } from "@/app/model/header";
 import { BiMenuAltRight } from "react-icons/bi";
 import { useState } from "react";
 import { Link, Link as Scrolllink } from "react-scroll";

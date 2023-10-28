@@ -2,6 +2,7 @@
 import { headerItems, projects, userInfo } from "@/app/constant/constant";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+
 const Project: React.FC = () => {
   const [isClient, setIsClient] = useState(false);
 
@@ -19,7 +20,7 @@ const Project: React.FC = () => {
         {Object.keys(projects).map((project) => (
           <Image
             src={projects[project as keyof projects].image}
-            alt="projcts"
+            alt="projects"
             width={300}
             height={300}
             className="mt-4 p-3"
