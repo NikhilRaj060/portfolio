@@ -1,5 +1,7 @@
 import { headerItems, userInfo } from "@/app/constant/constant";
 import Image from "next/image";
+import { Link, Link as Scrolllink } from "react-scroll";
+
 const Intro: React.FC = () => {
   return (
     <section
