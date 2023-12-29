@@ -6,7 +6,7 @@ const Intro: React.FC = () => {
   return (
     <section
       id={headerItems.home.page}
-      className="h-screen flex flex-col md:flex-row text-center justify-center items-center md:text-start"
+      className="h-screen flex flex-col mt-6 md:flex-row text-center justify-center items-center md:text-start"
     >
       <div>
         {["Nikhil_Raj_passportphoto"].map((path) => {
@@ -17,7 +17,7 @@ const Intro: React.FC = () => {
                 alt="profilepic"
                 width={300}
                 height={300}
-                className="rounded-full shadow-2xl mt-10 object-cover ar-1"
+                className="rounded-full shadow-2xl mt-10 object-cover ar-1 cursor-pointer hover:scale-100 transition duration-300 ease-out hover:ease-in hover:shadow-2xl hover:shadow-indigo-900/100"
               />
             </div>
           );
