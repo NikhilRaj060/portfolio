@@ -12,7 +12,7 @@ const About: React.FC = () => {
   return (
     <section
       id={headerItems.about.page}
-      className="h-screen flex flex-col sm:mt-8 md:flex-row text-center justify-center items-center md:text-start"
+      className="h-screen flex flex-col mt-40 md:mt-0 md:flex-row text-center justify-center items-center md:text-start"
     >
       <div className="m-4 md:ml-12 sm:ml-12 md:w-1/2">
         <h1 className="text-6xl my-6">About</h1>
@@ -39,11 +39,14 @@ const About: React.FC = () => {
                 alt="profilepic"
                 width={300}
                 height={300}
-                className="m-auto"
+                className="m-auto cursor-pointer rounded-2xl hover:scale-90 transition duration-300 ease-out hover:ease-in hover:shadow-2xl hover:shadow-indigo-900/50"
               />
               <div className="mt-3 w-3/4 break-words">
-                {userInfo.skills.map((skill) => (
-                  <span className="bg-gray-200 m-1 p-2 text-sm inline-block rounded-md">
+                {userInfo.skills.map((skill, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-200 m-1 p-2 text-sm inline-block rounded-md"
+                  >
                     {skill}
                   </span>
                 ))}

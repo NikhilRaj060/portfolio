@@ -33,6 +33,7 @@ const Header: React.FC = () => {
           ignoreCancelEvents={false}
           spyThrottle={500}
           className="block md:inline-block cursor-pointer"
+          onClick={() => showNavItems((prevState) => !prevState)}
         >
           Home
         </Link>
@@ -48,6 +49,7 @@ const Header: React.FC = () => {
           ignoreCancelEvents={false}
           spyThrottle={500}
           className="block md:inline-block cursor-pointer"
+          onClick={() => showNavItems((prevState) => !prevState)}
         >
           About
         </Link>
@@ -63,6 +65,7 @@ const Header: React.FC = () => {
           ignoreCancelEvents={false}
           spyThrottle={500}
           className="block md:inline-block cursor-pointer"
+          onClick={() => showNavItems((prevState) => !prevState)}
         >
           Projects
         </Link>
